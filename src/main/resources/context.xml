@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="numberPublisherEvent" class="ru.gamespring.EventPublisherNumber"/>
+    <bean id="numberListenerEvent" class="ru.gamespring.EventListenerNumber"/>
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="text"/>
+    </bean>
+
+    <bean id="gameStart" class="ru.gamespring.Game">
+    </bean>
+
+</beans>
